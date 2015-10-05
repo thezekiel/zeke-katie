@@ -82,6 +82,41 @@ textarea {
     resize: vertical;
 }
 
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .fullheight {
+        height: 768px;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .fullheight {
+        height: 1024px;
+    }
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    .fullheight {
+        height: 320px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    .fullheight {
+        height: 568px;
+    }
+}
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .fullheight {
+        height: 320px;
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .fullheight {
+        height: 480px;
+    }
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -147,6 +182,29 @@ textarea {
 
 .body{
    font-family: 'brandon_grotesque_regularRg'; 
+}
+
+p{
+    font-family: "edita",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #526f85;
+}
+
+p a{
+    color: #526f85;
+    text-decoration: none;
+    border-bottom: 1px solid #dadfe3;
+    transition: color 0.3s ease;
+    transition: border-bottom 0.3s ease;
+    padding-bottom: 3px;
+}
+
+p a:hover{
+    color: #304b5e;
+    border-bottom: 1px solid #9bafbf;
 }
 
 /*  Address Form  */
@@ -293,7 +351,7 @@ input[type=submit]:active{
     width: 100%;
     height:100vh;
     background: url(../img/bg.jpg) no-repeat center center fixed;
-    background-size: cover; 
+    background-size: cover;
 }
 
 
@@ -332,7 +390,9 @@ input[type=submit]:active{
 }
 
 .about h1{
-    font-family:'brandon_grotesquebold';
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 12px;
@@ -343,7 +403,9 @@ input[type=submit]:active{
 }
 
 .about h2{
-    font-family:'brandon_grotesque_regularRg';
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -351,6 +413,199 @@ input[type=submit]:active{
     text-align: center;
     margin-bottom: 40px;
     line-height: 24px;
+}
+
+.map{
+    display:block;
+    width: 100%;
+    height:100vh;
+    background: url(../img/bg-map-2.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.map-key{
+    display: block;
+    width:320px;
+    height:320px;
+    background-color: #FFF;
+    border: 1px solid #d8e0e6;
+    position: relative;
+    top:25%;
+    left:48%;
+    padding: 25px 20px 30px 30px;
+}
+
+.map-key h3{
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #6a8295;
+    margin-bottom:5px;
+
+}
+
+.map-key .num{
+    color:#e8c323;
+    width:15px;
+    display: inline-block;
+}
+
+.map-key .date{
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:#dadfe3;
+}
+
+.map-key p{
+    font-family: "edita",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:#9bafbf;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 22px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.map-key a{
+    color:#9bafbf;
+    border-bottom: 1px solid #eef1f4;
+    transition: color 0.3s ease;
+}
+
+.map-key a:hover{
+    color:dadfe3;
+    border-bottom:1px solid #dadfe3;
+}
+
+.info{
+    background-color: #FFF;
+    display:block;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.info h2{
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #e8c323;
+    text-align: center;
+    margin: 0 0 8%;
+}
+
+
+.transport{
+    background-color: #f6fafc;
+}
+
+.option{
+    max-width:660px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.option .airbnb{ background: url(../img/icon-airbnb.png); }
+.option .vrbo{ background: url(../img/icon-vrbo.png); }
+.option .hotel{ background: url(../img/icon-hotel.png); }
+.option .taxi{ background: url(../img/icon-taxi.png); }
+.option .uber{ background: url(../img/icon-uber.png); }
+.option .mta{ background: url(../img/icon-mta.png); }
+
+.option .option-icon{
+    background-size: 80px 80px;
+    width:80px;
+    height:80px;
+    float:left;
+    display: inline;
+}
+
+
+
+.option p{
+ 
+    display: block;
+    padding-left:110px;
+    padding-right: 30px;
+}
+
+.option .trains{
+    padding-left:110px;
+    margin-bottom: 50px;
+}
+
+.option h3{
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #526f85;
+    margin: 40px 0 20px;
+}
+
+.option .trains p{
+    font-size: 16px;
+    color:#9bafbf;
+    padding-left: 0;
+}
+
+.option .trains .G{ background: url(../img/icon-g.png);}
+.option .trains .F{ background: url(../img/icon-f.png);}
+.option .trains .D{ background: url(../img/icon-d.png);}
+.option .trains .N{ background: url(../img/icon-n.png);}
+.option .trains .R{ background: url(../img/icon-r.png);}
+
+.option .trains .train-icon {
+    background-size: 26px 26px; 
+    display:inline; 
+    float: left;
+    width:26px;
+    height:26px;
+    margin-right: 10px;
+}
+
+.footer{
+    display: block;
+    background-color: #FFF;
+    padding: 10% 0;
+}
+
+.footer p {
+    text-align: center;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 30px;
+    color: #ccd6de;
+}
+
+.footer p.copyright{
+    font-family: "brandon-grotesque",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.footer p a{
+    color: #ccd6de;
+    transition: color 0.3s ease;
+}
+
+.footer p a:hover{
+    color: #9bafbf;
 }
 
 
@@ -365,6 +620,54 @@ input[type=submit]:active{
         letter-spacing: 10px;
         line-height: 36px;
     }
+    .option .option-icon{
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+ 
+    .option p{
+        padding-left: 30px;
+        margin-top: 0px;
+    }
+
+    .map{
+        display:block;
+        width: 100%;
+        height:100vh;
+        background: url(../img/bg-map-phone.jpg) no-repeat center center fixed;
+        background-size: cover; 
+    }
+
+    .map-key{
+        display: block;
+        width:280px;
+        height:320px;
+        background-color: #FFF;
+        border: 1px solid #d8e0e6;
+        position: relative;
+        top:60%;
+        left:0%;
+        margin:0 auto;
+        padding: 25px 20px 30px 30px;
+        }
+    .map-key h3{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
+    .info{
+        padding-top: 20%;
+    }
+
+    .info.lodging{
+        padding-top:60%;
+    }
+
+    .option .trains{
+        padding-left:30px;
+        margin-bottom: 50px;
+    }  
 }
 
 @media all and (max-width: 330px) {
@@ -377,6 +680,12 @@ input[type=submit]:active{
         letter-spacing: 8px;
         line-height: 36px;
     }
+
+    .map-key{
+        width:260px;
+        padding: 20px 15px 30px 15px;
+    }
+
 }
 
 
