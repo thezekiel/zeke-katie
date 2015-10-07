@@ -526,6 +526,7 @@ input[type=submit]:active{
     max-width:660px;
     margin: 0 auto;
     margin-bottom: 5%;
+    padding: 0 30px;
 }
 
 .option .airbnb{ background: url(../img/icon-airbnb.png); }
@@ -548,8 +549,8 @@ input[type=submit]:active{
 .option p{
  
     display: block;
-    padding-left:110px;
-    padding-right: 30px;
+    padding-left:100px;
+    /*padding-right: 30px;*/
 }
 
 .option .trains{
@@ -653,10 +654,13 @@ input[type=submit]:active{
         float: none;
         display: block;
         margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 10px;
     }
+
  
     .option p{
-        padding-left: 30px;
+        padding-left: 0px;
         margin-top: 0px;
     }
 
@@ -688,7 +692,7 @@ input[type=submit]:active{
     }
     
     .info{
-        padding-top: 20%;
+        padding: 20% 0;
     }
 
     .info.lodging{
@@ -696,7 +700,7 @@ input[type=submit]:active{
     }
 
     .option .trains{
-        padding-left:30px;
+        padding-left:0px;
         margin-bottom: 50px;
     }  
 }
