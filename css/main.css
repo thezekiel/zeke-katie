@@ -135,7 +135,7 @@ textarea {
 
 /* Typography */
 
-@font-face {
+/*@font-face {
     font-family: 'brandon_grotesqueblack';
     src: url('../fonts/brandongrotesque-black-webfont.eot');
     src: url('../fonts/brandongrotesque-black-webfont.eot?#iefix') format('embedded-opentype'),
@@ -178,7 +178,7 @@ textarea {
     font-weight: normal;
     font-style: normal;
 
-}
+}*/
 
 .body{
    font-family: 'brandon_grotesque_regularRg'; 
