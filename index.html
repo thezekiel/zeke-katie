@@ -16,6 +16,12 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://use.typekit.net/jfs3itb.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script>
+            $(window).scroll(function() {
+              var scrolledY = $(window).scrollTop();
+              $('#hero').css('background-position', 'left ' + ((scrolledY)) + 'px');
+            });
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
