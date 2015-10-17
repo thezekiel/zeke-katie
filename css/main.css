@@ -416,7 +416,7 @@ input[type=submit]:active{
     text-rendering: optimizeLegibility;
 }
 
-.about h2{
+.about h2, .registry h2{
     font-family: "brandon-grotesque",sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -590,9 +590,33 @@ input[type=submit]:active{
     margin-right: 10px;
 }
 
+
+.registry{
+    height:800px;
+    display: inline-block;
+    width: 100%;
+}
+
+.registry-content{
+    max-width: 500px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccd6de;
+    position: relative;
+    top: 250px;
+}
+
+.registry h2{
+    color:#ccd6de;
+    margin: 82px 0;   
+}
+
 .footer{
     display: block;
-    background-color: #FFF;
+    /*background-color: #FFF;*/
+    background-color: #f6fafc;
     padding: 10% 0;
 }
 
@@ -636,6 +660,12 @@ input[type=submit]:active{
         background-attachment: scroll;
     }
 
+}
+
+@media all and (max-width: 600px) {
+    .registry-content{
+        width: 340px;
+    }
 }
 
 
@@ -702,7 +732,16 @@ input[type=submit]:active{
     .option .trains{
         padding-left:0px;
         margin-bottom: 50px;
-    }  
+    }
+
+    .registry{
+        height:400px;
+    } 
+
+    .registry-content{
+        max-width: 240px;
+        top:70px;
+    } 
 }
 
 @media all and (max-width: 330px) {
@@ -720,6 +759,10 @@ input[type=submit]:active{
         width:260px;
         padding: 20px 15px 30px 15px;
     }
+
+    .registry-content{
+        max-width: 220px;
+    } 
 
 }
 
