@@ -580,6 +580,10 @@ input[type=submit]:active{
 .option .trains .D{ background: url(../img/icon-d.png);}
 .option .trains .N{ background: url(../img/icon-n.png);}
 .option .trains .R{ background: url(../img/icon-r.png);}
+.option .trains .Q{ background: url(../img/icon-q.png);}
+.option .trains .B{ background: url(../img/icon-b.png);}
+.option .trains .two{ background: url(../img/icon-2.png);}
+.option .trains .three{ background: url(../img/icon-3.png);}
 
 .option .trains .train-icon {
     background-size: 26px 26px; 
@@ -610,7 +614,7 @@ input[type=submit]:active{
 
 .registry h2{
     color:#ccd6de;
-    margin: 82px 0;   
+    margin: 85px 0;   
 }
 
 .footer{
@@ -714,7 +718,7 @@ input[type=submit]:active{
         top:60%;
         left:0%;
         margin:0 auto;
-        padding: 25px 20px 30px 30px;
+        padding: 25px 20px 20px 30px;
         }
     .map-key h3{
         font-size: 14px;
@@ -726,7 +730,7 @@ input[type=submit]:active{
     }
 
     .info.lodging{
-        padding-top:60%;
+        padding-top:40%;
     }
 
     .option .trains{
@@ -741,7 +745,10 @@ input[type=submit]:active{
     .registry-content{
         max-width: 240px;
         top:70px;
-    } 
+    }
+    .registry h2{
+    margin: 75px 0;   
+} 
 }
 
 @media all and (max-width: 330px) {
@@ -758,6 +765,10 @@ input[type=submit]:active{
     .map-key{
         width:260px;
         padding: 20px 15px 30px 15px;
+    }
+
+    .info.lodging{
+        padding-top:70%;
     }
 
     .registry-content{
