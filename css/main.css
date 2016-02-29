@@ -433,7 +433,7 @@ input[type=submit]:active{
     display:block;
     width: 100%;
     height:100vh;
-    background: url(../img/bg-map-2.jpg) no-repeat center center fixed;
+    background: url(../img/bg-map-3.jpg) no-repeat center center fixed;
     background-size: cover; 
 }
 
@@ -582,6 +582,9 @@ input[type=submit]:active{
 .option .trains .R{ background: url(../img/icon-r.png);}
 .option .trains .Q{ background: url(../img/icon-q.png);}
 .option .trains .B{ background: url(../img/icon-b.png);}
+.option .trains .A{ background: url(../img/icon-a.png);}
+.option .trains .C{ background: url(../img/icon-c.png);}
+.option .trains .four{ background: url(../img/icon-4.png);}
 .option .trains .two{ background: url(../img/icon-2.png);}
 .option .trains .three{ background: url(../img/icon-3.png);}
 
@@ -610,11 +613,24 @@ input[type=submit]:active{
     border: 1px solid #ccd6de;
     position: relative;
     top: 250px;
+    text-decoration: none;
+    transition: border 0.3s ease; 
 }
 
+
 .registry h2{
-    color:#ccd6de;
-    margin: 85px 0;   
+    color:#9bafbf;
+    margin: 85px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.registry-content:hover h2{
+    color:#526f85;
+}
+
+.registry-content:hover {
+    border: 1px solid #9bafbf;
 }
 
 .footer{
@@ -702,7 +718,7 @@ input[type=submit]:active{
         display:block;
         width: 100%;
         height:100vh;
-        background: url(../img/bg-map-phone.jpg) no-repeat center center fixed;
+        background: url(../img/bg-map-phone-2.jpg) no-repeat center center fixed;
         background-size: cover; 
         background-attachment: scroll;
 
