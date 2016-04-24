@@ -690,7 +690,7 @@ input[type=submit]:active{
 
 
 
-@media all and (max-width: 460px) {
+@media all and (max-width: 600px) {
     .about-content{
         top: 25%;
     }
