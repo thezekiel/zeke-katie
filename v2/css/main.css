@@ -483,7 +483,8 @@ input[type=submit]:active{
 }*/
 
 .hero {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
+    /*background: url(../img/bg.jpg) no-repeat center center fixed;*/
+    background: url(../img/zk.photos.ps.209.jpg) no-repeat center center fixed;
     display: block;
     background-size: cover;
     -webkit-background-size: cover;
