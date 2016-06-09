@@ -485,6 +485,7 @@ input[type=submit]:active{
 .hero {
     /*background: url(../img/bg.jpg) no-repeat center center fixed;*/
     background: url(../img/zk.photos.ps.209.jpg) no-repeat center center fixed;
+    /*background: url(../img/zk.photos.ps.148.jpg) no-repeat center center fixed;*/
     display: block;
     background-size: cover;
     -webkit-background-size: cover;
@@ -495,6 +496,10 @@ input[type=submit]:active{
 
     background-position: center center fixed;
     background-repeat: no-repeat;
+}
+
+.hero.transport{
+    background: url(../img/zk.photos.ps.149.jpg) no-repeat center center fixed;
 }
 
 
@@ -667,7 +672,7 @@ input[type=submit]:active{
     padding-bottom: 10%;
 }
 
-.info h2{
+.info h2, .transport h2{
     font-family: "brandon-grotesque",sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -685,16 +690,25 @@ input[type=submit]:active{
 }
 
 .info.transport{
-    padding-top: 0;
+    padding-top: 10%;
     background-color: #fff;
 }
 
-.transport h2{
+/*.transport h2{
     font-size: 40px;
     width: 100%;
     background-color: #f6fafc;
     color:#6a8295;
     padding: 20% 0;
+}*/
+
+.transport h2{
+    width:900px;
+    height:60%;
+    margin: auto;
+    padding: 30% 0;
+    font-size: 40px;
+    color: #fff;
 }
 
 .option{
