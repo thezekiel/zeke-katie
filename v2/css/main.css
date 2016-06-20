@@ -484,7 +484,7 @@ input[type=submit]:active{
 
 .hero {
     /*background: url(../img/bg.jpg) no-repeat center center fixed;*/
-    background: url(../img/zk.photos.ps.209.jpg) no-repeat center center fixed;
+    background: url(../img/bg-2.jpg) no-repeat center center fixed;
     /*background: url(../img/zk.photos.ps.148.jpg) no-repeat center center fixed;*/
     display: block;
     background-size: cover;
@@ -499,7 +499,13 @@ input[type=submit]:active{
 }
 
 .hero.transport{
-    background: url(../img/zk.photos.ps.149.jpg) no-repeat center center fixed;
+    background: url(../img/bg-3.2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
 
@@ -509,7 +515,7 @@ input[type=submit]:active{
     display: inline-block;
     height:60%;
     position: absolute;
-    top: 50px;
+    top: 0px;
     bottom:0%;
     margin: auto;
     margin-left: 10%;
@@ -703,11 +709,11 @@ input[type=submit]:active{
 }*/
 
 .transport h2{
-    width:900px;
-    height:60%;
+    width:800px;
+    /*height:60%;*/
     margin: auto;
-    padding: 30% 0;
-    font-size: 40px;
+    padding: 25% 0;
+    font-size: 70px;
     color: #fff;
 }
 
@@ -949,12 +955,20 @@ input[type=submit]:active{
         display:block;
     }
 
-    .hero {
+    .hero, .hero.transport {
         background-attachment: scroll;
     }
 
     .map {
         background-attachment: scroll;
+    }
+
+    .transport h2{
+    width:600px;
+    height:60%;
+    margin: auto;
+    padding: 40% 0;
+    font-size: 50px;
     }
 
 }
@@ -1062,6 +1076,13 @@ input[type=submit]:active{
     .registry h2{
     margin: 75px 0;   
     } 
+    .transport h2{
+    width:400px;
+    height:60%;
+    margin: auto;
+    padding: 50% 0;
+    font-size: 40px;
+    }
 }
 
 @media all and (max-width: 400px) {
@@ -1071,6 +1092,16 @@ input[type=submit]:active{
     }
     .info.lodging{
         padding-top:80%;
+    }
+    .transport h2{
+    width:320px;
+    height:60%;
+    margin: auto;
+    padding: 50% 0;
+    font-size: 36px;
+    }
+    .hero-copy img{
+    top:-80px;
     }
 }
 
